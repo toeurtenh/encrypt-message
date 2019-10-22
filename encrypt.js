@@ -1,8 +1,8 @@
-var caesarShift = function(str, key) {
+var encryptMessage = function(str, key) {
 
   // Wrap the key
   if (key < 0)
-    return caesarShift(str, key + 26);
+    return encryptMessage(str, key + 26);
 
   var output = '';
 
@@ -35,4 +35,4 @@ var caesarShift = function(str, key) {
 
 };
 
-module.exports = caesarShift;
+module.exports = encryptMessage;
